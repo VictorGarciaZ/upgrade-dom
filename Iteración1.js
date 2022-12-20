@@ -8,11 +8,11 @@ console.log(pillador);
 
 
 /*1.3 Usa querySelector para mostrar por consola todos los p*/
-const parragraph = document.querySelector("p");
+const parragraph = document.querySelectorAll("p");
 console.log(parragraph);
 
 /*1.4 Usa querySelector para mostrar por consola todos los elementos con la clase.pokemon*/
-const classPokemon = document.querySelector (".pokemon")
+const classPokemon = document.querySelectorAll(".pokemon")
 console.log(classPokemon);
 
 /*1.5 Usa querySelector para mostrar por consola todos los elementos con el atributo 
