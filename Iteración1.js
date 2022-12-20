@@ -17,10 +17,10 @@ console.log(classPokemon);
 
 /*1.5 Usa querySelector para mostrar por consola todos los elementos con el atributo 
 data-function="testMe"*/
-const attr = document.querySelector("data-function="testMe") DUDA EN ESTE EJERCICIO 
+const attr = document.querySelectorAll("[data-function='testMe']") //DUDA RESUELTA EN CLASE ("LAS COMILLAS")
 console.log(attr);
 
 /*1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo 
 data-function="testMe"*/
-const attr = document.querySelector ("data-function="testMe") DUDO EN ESTE EJERCICIO    
-console.log(attr[2]); 
+const attr = document.querySelector ("[data-function='testMe']") DUDO EN ESTE EJERCICIO    
+console.log(attr[2]);
