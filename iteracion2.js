@@ -5,17 +5,15 @@ document.body.appendChild(div1);
 /*2.2 Inserta dinamicamente en un html un div que contenga una p con javascript.*/
 const divP = document.createElement("div");
 const parragraph = document.createElement ("p");
+divP.appendChild(parragraph);
 document.body.appendChild(divP);
-document.body.appendChild(parragraph);
 
 /*2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.*/
 const div6p = document.createElement("div");
 
-document.body.appendChild(div6p);
-
 for (let i = 0; i < 6; i++) {
   let divSixP = document.createElement("p");
-  createDivWith6P.appendChild(divSixP);
+  div6p.appendChild(divSixP);
 }
 
 /*2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.*/
