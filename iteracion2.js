@@ -24,19 +24,66 @@ document.body.appendChild(textP);
 
 /*2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.*/
 const h2Class = document.querySelector(".fn-insert-here")
-h2Class.textContent = "Wubba Lubba dub dub";
+h2Class.innerText = "Wubba Lubba dub dub";
 
 
 /*2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
 const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];*/
-const list = document.createElement ("ul") NO SE COMO SEGUIR
 
+//NO SE COMO SEGUIR DUDA RESUELTA EN CLASE
+
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+
+const ull$$ = document.createElement ("ul")
+const li$$ = document.createElement("li")
+
+li$$.append(apps[0]);
+
+ull$$.appendChild(li$$)
+
+document.body.appendChild(ull$$)
+
+for (const app of apps) {
+
+    const li$$ = document.createElement("li")
+
+    li$$.append(app)
+
+    ull$$.appendChild(li$$)
+}
 
 /*2.7 Elimina todos los nodos que tengan la clase .fn-remove-me*/
+//RESUELTO EN CLASE
+const nodosRemove$$ =  document.querySelectorAll(".fn-rempve-me")
 
+for (const nodoToRemove$$ of nodosRemove$$) {
+    nodoToRemove$$.remove();
+    
+}
 
 /*2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
-	Recuerda que no solo puedes insertar elementos con .appendChild.*/
+Recuerda que no solo puedes insertar elementos con .appendChild.*/
+//RESUELTO EN CLASE
+const p4$$ = document.createElement ("p");
+p4$$.textContent = "Voy en medio!";
+
+const divs$$ = document.querySelectorAll("div");
+
+/*la posicion 1 de mi div$$ es el que va detras justo de la p*/
+
+document.body.insertBefore(p4$$, divs$$[1]);
 
 
 /*2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here*/
+//RESUELTO EN CLASE
+
+const divsInsert$$ = document.querySelectorAll (".fn-insert-here");
+
+for (const div$$ of divsInsert$$) {
+
+    const p5$$ = document.createElement("p");
+
+    p5$$.textContent = "Voy dentro!"
+    
+    div$$.appendChild(p5$$)
+}
